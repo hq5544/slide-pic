@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>我的资料</title>
+    <link rel="stylesheet" type="text/css" href="slide-pic.css">
+    <style type="text/css">
+    .small-pics {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="small-pics">
+        <div class="hidden"></div>
+    </div>
+    <div class="small-pics">
+        <div class="hidden"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="slide-pic.js"></script>
+    <script type="text/javascript">
+        var pics9 = [{
+            "_id": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-2",
+            "_s": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-2_s"
+        }, {
+            "_id": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-4",
+            "_s": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-4_s"
+        }, {
+            "_id": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-3",
+            "_s": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-3_s"
+        }, {
+            "_id": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-5",
+            "_s": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-5_s"
+        }, {
+            "_id": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-1",
+            "_s": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-1_s"
+        }];
+        $(".small-pics").eq(0).data("pics",pics9);
+        initPic($(".small-pics").eq(0));
+
+        var pics1 = [{
+            "_id": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-1",
+            "_s": "http://7xnw4i.com1.z0.glb.clouddn.com/news424-1_s"
+        }];
+        $(".small-pics").eq(1).data("pics",pics1);
+        initPic($(".small-pics").eq(1));
+    </script>
+</body>
+
+</html>
